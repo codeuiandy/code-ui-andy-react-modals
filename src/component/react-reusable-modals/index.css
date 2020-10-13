@@ -1,0 +1,300 @@
+.init{
+  opacity: 1; 
+  animation:modalInit 500ms ease-in-out forwards;
+}
+.modal-init-state-codeuiandy-team{
+  opacity: 0; 
+  animation:modalInit 1s ease-in-out forwards;
+}
+
+
+.modal-overlay-codeuiandy-team{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.397);
+  top: 0;
+  left: 0;
+  z-index: 10 ;
+  animation: showOverlay 1s ease-in-out forwards;
+}
+
+
+.modal-overlay-codeuiandy-hide-team{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.397);
+  top: 0;
+  left: 0;
+  z-index: 10 ;
+ animation: hideOverlay 1s ease-in-out forwards;
+}
+
+
+
+.simple-modal-overlay-codeuiandy-hide-team{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.397);
+  top: 0;
+  left: 0;
+  z-index: 10 ;
+ animation: simplehideOverlay 500ms ease-in-out forwards;
+}
+
+.simple-modal-overlay-codeuiandy-show-team{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.397);
+  top: 0;
+  left: 0;
+  z-index: 10 ;
+ animation: simpleShowOverlay 500ms ease-in-out forwards;
+}
+
+
+
+@keyframes simplehideOverlay{
+  0% {
+  opacity: 1;
+ }
+  50% {
+   opacity: 0.5;
+ }
+ 70% {
+ transform: scale(10);
+}
+  100% {
+ 
+  transform: translateY(-100vh);
+  opacity: 0;
+ }
+
+}
+
+@keyframes simpleShowOverlay{
+  0% {
+ transform: translateY(0);
+ }
+ 
+
+  100% {
+ 
+  transform: translateY(0);
+ 
+ }
+
+}
+
+
+
+
+@keyframes showOverlay{
+  0% {
+    transform: scaleY(0.005) scaleX(0);
+ }
+  50% {
+    transform: scaleY(0.005) scaleX(1);
+ }
+  100% {
+    transform: scaleY(1) scaleX(1);
+ }
+
+}
+
+
+@keyframes hideOverlay{
+  0% {
+    transform: scaleY(1) scaleX(1);
+ }
+  50% {
+    transform: scaleY(0.005) scaleX(1);
+ }
+  100% {
+    transform: scaleY(0.005) scaleX(0);
+ }
+}
+
+
+
+
+
+
+
+.modalInitStates{
+  opacity: 0; 
+  animation:modalInit 1s ease-in-out forwards;
+}
+
+@keyframes modalInit{
+  0%{
+    transform: translateY(0);
+  }
+
+  
+
+  100%{
+  opacity: 0;
+    transform: translateY(-100vh);
+  }
+}
+
+
+
+.modal-container-codeuiandy-team{
+
+    width: 530px;
+    height: 354px;
+    background-color: white;
+    position: fixed;
+    z-index: 20 !important;
+    border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+padding: 20px 20px 20px 20px;
+}
+
+.simple-modal-container-codeuiandy-team .modal-head-code-ui-andy-team > *{
+  font-size: 15px;
+}
+
+.simple-modal-container-codeuiandy-team .modal-head-code-ui-andy-team {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.61);
+}
+
+.simple-modal-container-codeuiandy-team .modal-head-code-ui-andy-team > *{
+  font-size: 15px;
+}
+
+.modal-container-codeuiandy-team .modal-head-code-ui-andy-team {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.61);
+}
+
+.cancelModal-code-ui-andy-team{
+  position: relative;
+}
+
+.x-modal{
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  color: red;
+  font-weight: 600;
+}
+
+.modal-footer-code-ui-andy-team{
+width: 100%;
+}
+
+.footer-code-ui-andy-team{
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid  rgba(128, 128, 128, 0.61);
+  width: 93%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  display: flex;
+}
+
+.footer-code-ui-andy-team > *{
+  font-size: 20px;
+}
+
+.modal-body-code-ui-andy-team > *{
+  font-size: 14px;
+  color:rgba(0, 0, 0, 0.671);
+  line-height: 25px;
+  word-spacing: 1px;
+}
+.simple-modal-container-codeuiandy-team{
+
+  width: 530px;
+  height: 354px;
+  background-color: white;
+  position: fixed;
+  z-index: 20 !important;
+  border-radius: 5px;
+margin-left: auto;
+margin-right: auto;
+margin-top: auto;
+margin-bottom: auto;
+left: 0;
+right: 0;
+top: 20px;
+padding: 10px;
+overflow: hidden;
+}
+
+
+
+
+
+.showModal{
+  opacity: 1;
+  animation:showModal 400ms ease-in-out forwards;
+  position: fixed;
+  z-index: 99999;
+}
+
+
+@keyframes showModal{
+  0%{
+    transform: translateY(-400px);
+  }
+
+  100%{
+    transform: translateY(0);
+  }
+}
+
+
+.hideModal{
+  opacity: 1;
+  animation:hideModals 600ms ease-in-out forwards;
+}
+
+
+@keyframes hideModas{
+  0%{
+    transform: scale(1);
+  }
+40%{
+  opacity: 0.5;
+}
+  100%{
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+
+@media(max-width:598px){
+  .modal-container-codeuiandy-team{
+
+    width: 80vw;
+    height: 354px;
+    background-color: white;
+    position: fixed;
+    z-index: 20 !important;
+    border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+padding: 20px 20px 20px 20px;
+}
+}
